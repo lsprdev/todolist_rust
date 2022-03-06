@@ -23,9 +23,26 @@ lista1:
     ...
 
 Posso criar tasks, apagar, editar e marcar como concluídas.
+
+Coisas que precisarei aprender:
+Criar pasta, criar arquivos(editar e apagar),
+Fazer uma cli funcional e bonita.
+
 */
 
+use std::env; // Ler input dados junto com cargo run. Ex: Cargo run Hello World
+use std::fs;
 
 fn main() {
-    println!("Hello, world!");
+    // Pequeno teste com frases do Linus Torvalds
+    let args: Vec<String> = env::args().collect();
+
+    let filename = &args[1];
+
+    let contents = fs::read_to_string(filename)
+        .expect("Something went wrong reading the file");
+    println!("======================================================");
+
+    println!("Quote:\n \n{}", contents);
+
 }
