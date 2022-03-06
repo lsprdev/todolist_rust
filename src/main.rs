@@ -22,7 +22,7 @@ lista1:
     task3
     ...
 
-Posso criar tasks, apagar, editar e marcar como comcluidas.
+Posso criar tasks, apagar, editar e marcar como concluídas.
 */
 
 
